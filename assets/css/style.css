@@ -410,6 +410,14 @@ body{
     border-radius: 3px;
 }
 
+/* trackboard */
+.trackboard {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+}
+
 .penalties {
     font-family: "Chicle", "Open-Sans";
     color: #000;
