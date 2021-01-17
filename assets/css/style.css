@@ -395,6 +395,21 @@ body{
     animation-iteration-count: 1;
 }
 
+/* timmer */
+.timer {
+    margin-right: auto;
+    font-family: "Chicle", "Open-Sans";
+    color: #000;
+    background-color: #24FF00;
+    width: 150px;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 27px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
 
 /* game-page footer */
 
