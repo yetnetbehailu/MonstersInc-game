@@ -55,3 +55,40 @@
     text-align: center;
     color: #257ac9;
 }
+
+.logo {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.inc {
+    width: 75%;
+}
+
+.main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* media query target images*/
+@media only screen and (min-width: 1024px) {
+    .logo {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px),
+(max-height: 700px) {
+    .inc {
+        width: 65%;
+    }
+}
