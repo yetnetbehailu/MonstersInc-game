@@ -443,6 +443,14 @@ body{
 }
 
 
+.light-bulb {
+    position: absolute;
+    top: -49px;
+    width: 13%;
+
+}
+
+
 /* game-page footer */
 
 .game-footer {
