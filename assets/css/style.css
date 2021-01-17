@@ -319,6 +319,8 @@ h3 {
     margin-top: 12px;
 }
 
+
+/* game-page  */
 .game-page {
     width: 100vw;
     height: 100vh;
@@ -326,6 +328,25 @@ h3 {
 
 body{
     background-image:url(images/background.png);
+}
+
+.restart-home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home {
+    font-size: x-large;
+    background: #24FF00;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.restart {
+    font-size: x-large;
+    background: #24FF00;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 
 /* game-page footer */
