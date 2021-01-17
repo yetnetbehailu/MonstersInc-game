@@ -395,7 +395,7 @@ body{
     animation-iteration-count: 1;
 }
 
-/* timmer */
+/* timer */
 .timer {
     margin-right: auto;
     font-family: "Chicle", "Open-Sans";
@@ -407,6 +407,30 @@ body{
     font-size: 27px;
     padding-left: 10px;
     padding-top: 5px;
+    border-radius: 3px;
+}
+
+.penalties {
+    font-family: "Chicle", "Open-Sans";
+    color: #000;
+    background-color: #24FF00;
+    width: 120px;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+.score {
+    font-family: "Chicle", "Open-Sans";
+    color: #000;
+    background-color: #24FF00;
+    width: 115px;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 3px;
 }
 
