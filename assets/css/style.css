@@ -450,6 +450,11 @@ body{
 
 }
 
+@media screen and (max-width: 414px) {
+    .light-bulb {
+        top: 100%;
+    }
+}
 
 /* game-page footer */
 
