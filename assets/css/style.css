@@ -318,3 +318,9 @@ h3 {
     font-size: larger;
     margin-top: 12px;
 }
+
+.game-page {
+    width: 100vw;
+    height: 100vh;
+}
+
