@@ -49,3 +49,9 @@
 .hvr-glow:active {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
+
+.head-titel {
+    font-family: "Chicle", "Open-Sans";
+    text-align: center;
+    color: #257ac9;
+}
