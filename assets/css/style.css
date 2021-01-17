@@ -324,3 +324,20 @@ h3 {
     height: 100vh;
 }
 
+
+
+/* game-page footer */
+
+.game-footer {
+    background-color: #24FF00;
+    height: 3rem;
+    font-family: "Chicle", "Open-Sans";
+    text-align: center;
+    color: #000;
+}
+
+@media screen and (max-width: 414px) {
+    .copyright {
+        font-size: 90%;
+    }
+}
