@@ -324,7 +324,9 @@ h3 {
     height: 100vh;
 }
 
-
+body{
+    background-image:url(images/background.png);
+}
 
 /* game-page footer */
 
