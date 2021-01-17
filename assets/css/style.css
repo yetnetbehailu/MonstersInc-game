@@ -246,3 +246,61 @@ h3 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+
+
+/* start game modal */
+.game-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: modalopen;
+    animation-duration: 0.9s;
+}
+
+.game-modal-content {
+    background-color: #257ac9;
+    color: #000;
+    margin: 5% auto;
+    padding: 20px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.levelsBtn {
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.btn-success {
+    width: 150px;
+    font-size: 18px;
+    color: #171917;
+    background-color: #29a044;
+}
+
+.btn-success:hover {
+    color: #000;
+    background-color: #1cb73f;
+}
+
+
+.shutBtn {
+    color: #000;
+    float: right;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.shutBtn:hover,
+.shutBtn:focus {
+    text-decoration: none;
+    cursor: pointer;
+}

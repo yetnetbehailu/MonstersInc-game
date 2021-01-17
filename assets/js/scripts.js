@@ -33,3 +33,30 @@ function outsideClick(e) {
     }
 }
 
+// startgame button modal Url (https://www.youtube.com/watch?v=6ophW7Ask_0)
+var gameModal = document.getElementById("gamemodal");
+
+var gameBtn = document.getElementById("gameBtn");
+
+var shutBtn = document.getElementsByClassName("shutBtn")[0];
+
+gameBtn.addEventListener("click", showModal);
+
+shutBtn.addEventListener("click", hideModal);
+
+
+window.addEventListener("click", clickOutside);
+
+function showModal(){
+    gamemodal.style.display = "block";
+}
+
+function hideModal(){
+    gamemodal.style.display = "none";
+}
+
+function clickOutside(e) {
+    if (e.target == gamemodal){
+        gamemodal.style.display = "none";
+    }
+}
