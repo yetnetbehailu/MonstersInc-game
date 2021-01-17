@@ -304,3 +304,17 @@ h3 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*home-footer*/
+.home-footer {
+    height: 3rem;
+    font-family: "Chicle", "Open-Sans";
+    color: #000;
+    text-align: center;
+    background-color: #257ac9;
+}
+
+.copyright {
+    font-size: larger;
+    margin-top: 12px;
+}
