@@ -14,3 +14,20 @@
  
     - _"As **site owner**, I want to further develop my knowledge and skills in writing JavaScript & jQuery code. "_
  
+-  ### User stories ###
+ 
+   - _"As a **user**, I want a game that is fun to play. "_
+ 
+   - _"As a **user**, I want the game to challenge my memory. "_
+ 
+   - _"As a **user**, I want to easily access instructions on how to play. "_
+ 
+   - _"As a **user**, I'd like a time limit to add more of a challenge. "_
+ 
+   - _"As a **user**, I'd like a card drawing limit to add more of a challenge. "_
+ 
+   - _"As a **user**, I want the option to change the level of difficulty to add complexity when desired."_
+ 
+   - _"As a **user**, I want to be able to read my score result_".
+
+   
