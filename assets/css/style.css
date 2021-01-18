@@ -471,6 +471,7 @@ body {
     padding: 0;
     border: 0;
     margin: 1%;
+    transform-origin: center right;
 }
 
 .card__face {
@@ -481,12 +482,17 @@ body {
 }
 
 .card__face--front {
-  background: red;
+    background: red;
 }
 
 .card__face--back {
-  background: blue;
-  transform: rotateY( 180deg );
+    background: blue;
+    transform: rotateY(-180deg);
+}
+
+
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(180deg);
 }
 
 /* game-page footer */

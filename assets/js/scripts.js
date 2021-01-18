@@ -60,3 +60,11 @@ function clickOutside(e) {
         gamemodal.style.display = "none";
     }
 }
+
+// Game page js...
+// card deck flipp effect..
+
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
