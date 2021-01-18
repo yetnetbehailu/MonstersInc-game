@@ -326,8 +326,8 @@ h3 {
     height: 100vh;
 }
 
-body{
-    background-image:url(images/background.png);
+body {
+    background-image: url(images/background.png);
 }
 
 .restart-home {
@@ -457,12 +457,18 @@ body{
 }
 
 .game-cards {
-   width: 100%;
-  height: 72px;
-  perspective: 600px;
-
+    width: 100%;
+    height: 72px;
+    perspective: 600px;
 }
 
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
 
 
 /* game-page footer */
