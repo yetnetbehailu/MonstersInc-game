@@ -455,7 +455,7 @@ body {
         top: 100%;
     }
 }
-
+/* game page cards */
 .game-cards {
     width: 100%;
     height: 72px;
@@ -489,13 +489,151 @@ body {
 }
 
 .card__face--back {
-    background: blue;
     transform: rotateY(-180deg);
 }
 
 
 .card.is-flipped {
     transform: translateX(-100%) rotateY(180deg);
+}
+
+/* card img characters */
+
+.boo{
+    background-image: url(images/boo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.boo{
+    background-image: url(images/boo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sully{
+    background-image: url(images/sully.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sully{
+    background-image: url(images/sully.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mike{
+    background-image: url(images/mike.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mike{
+    background-image: url(images/mike.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cleaner{
+    background-image: url(images/cleaner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.cleaner{
+    background-image: url(images/cleaner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lizzard{
+    background-image: url(images/lizzard.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.lizzard{
+    background-image: url(images/lizzard.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mrcrab{
+    background-image: url(images/mrcrab.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mrcrab{
+    background-image: url(images/mrcrab.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.twins{
+    background-image: url(images/twins.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.twins{
+    background-image: url(images/twins.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.purple{
+    background-image: url(images/purple.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.purple{
+    background-image: url(images/purple.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.octopus{
+    background-image: url(images/octopus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.octopus{
+    background-image: url(images/octopus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.don{
+    background-image: url(images/don.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.don{
+    background-image: url(images/don.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.engineer{
+    background-image: url(images/engineer.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.engineer{
+    background-image: url(images/engineer.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.deanscrib{
+    background-image: url(images/deanscrib.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.deanscrib{
+    background-image: url(images/deanscrib.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* game-page footer */

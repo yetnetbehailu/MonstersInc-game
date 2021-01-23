@@ -60,3 +60,22 @@ function clickOutside(e) {
         gamemodal.style.display = "none";
     }
 }
+
+
+// Accessing the different levels
+
+$("#easy").click(function(){   
+
+    $("card").toggle();
+});
+
+
+function easylevel() {
+
+}
+
+function mediumlevel() {
+}
+
+function hardlevel() {
+}
