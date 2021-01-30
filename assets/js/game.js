@@ -4,8 +4,10 @@
 var cards = document.querySelectorAll('.card');
 let isCardFlipped = false;
 let firstCard, secondCard;
+let unableClick= false
 cards.forEach(card => {
 card.addEventListener('click', function cardFlipped() {
+    if (unableClick) return;
         this.classList.add('is-flipped');
         if (!isCardFlipped) {
             isCardFlipped = true;
@@ -36,8 +38,10 @@ function hideCards(firstCard, secondCard) {
 }
 
 function unflipCards() {
+    unableClick=true;
     setTimeout(() => {
         firstCard.classList.remove('is-flipped');
         secondCard.classList.remove('is-flipped');
+        unableClick=false;
     }, 1500);
 }
