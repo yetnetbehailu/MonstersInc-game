@@ -35,3 +35,9 @@ function hideCards(firstCard, secondCard) {
     }, 1400);
 }
 
+function unflipCards() {
+    setTimeout(() => {
+        firstCard.classList.remove('is-flipped');
+        secondCard.classList.remove('is-flipped');
+    }, 1500);
+}
