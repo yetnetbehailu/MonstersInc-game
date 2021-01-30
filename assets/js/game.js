@@ -8,6 +8,7 @@ let unableClick= false
 cards.forEach(card => {
 card.addEventListener('click', function cardFlipped() {
     if (unableClick) return;
+    if (this=== firstCard) return;
         this.classList.add('is-flipped');
         if (!isCardFlipped) {
             isCardFlipped = true;
@@ -15,7 +16,6 @@ card.addEventListener('click', function cardFlipped() {
             return;
         } 
             secondCard = this;
-            isCardFlipped = false;
             checkForMatch();
     });
 });
@@ -34,6 +34,7 @@ function hideCards(firstCard, secondCard) {
                 div.style.visibility = 'hidden';
             }
         }
+        resetBoard();
     }, 1400);
 }
 
@@ -42,6 +43,11 @@ function unflipCards() {
     setTimeout(() => {
         firstCard.classList.remove('is-flipped');
         secondCard.classList.remove('is-flipped');
-        unableClick=false;
+        resetBoard();
     }, 1500);
+}
+
+function resetBoard(){
+    [isCardFlipped, unableClick]= [false,false];
+    [firstCard,secondCard] = [null, null];
 }
