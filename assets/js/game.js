@@ -26,6 +26,7 @@ function checkForMatch() {
 }
 
 function hideCards(firstCard, secondCard) {
+    unableClick=true;
     setTimeout(() => {
         var divs = document.getElementsByTagName('div');
         for (var i = divs.length; i--;) {
@@ -51,7 +52,7 @@ function resetBoard(){
     [isCardFlipped, unableClick]= [false,false];
     [firstCard,secondCard] = [null, null];
 }
-//immediatley invoked function
+//immediatley invoked function to shuffle cards
 
 (function shuffleCards(){
     cards.forEach(card =>{
