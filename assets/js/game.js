@@ -51,3 +51,11 @@ function resetBoard(){
     [isCardFlipped, unableClick]= [false,false];
     [firstCard,secondCard] = [null, null];
 }
+//immediatley invoked function
+
+(function shuffleCards(){
+    cards.forEach(card =>{
+        let randomPos = Math.floor(Math.random()*25);
+        card.style.order=randomPos;
+    })
+})(); 
