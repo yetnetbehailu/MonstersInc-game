@@ -22,3 +22,16 @@ function checkForMatch() {
     let matchMade = firstCard.dataset.character === secondCard.dataset.character;
     matchMade ? hideCards(): unflipCards();
 }
+
+function hideCards(firstCard, secondCard) {
+    setTimeout(() => {
+        var divs = document.getElementsByTagName('div');
+        for (var i = divs.length; i--;) {
+            var div = divs[i];
+            if (div.className === 'card is-flipped') {
+                div.style.visibility = 'hidden';
+            }
+        }
+    }, 1400);
+}
+
