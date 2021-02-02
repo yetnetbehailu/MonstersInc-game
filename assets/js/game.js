@@ -32,7 +32,7 @@ function checkForMatch() {
 
 //match- player recive points & cards hidden
 var scores=document.querySelector(".score")
-let score= 10;
+let score= 0;
 
 function hideCards() {
     unableClick=true;
@@ -47,8 +47,8 @@ function hideCards() {
         }
         resetBoard();
     }, 1300);
+    score += 10;
     scores.innerText =  `Score: ${score}`;
-            score += 10;
 }
 
 //Not a match
@@ -59,6 +59,10 @@ function unflipCards() {
         secondCard.classList.remove('is-flipped');
         resetBoard();
     }, 1300);
+    if(score>0){
+        score-=2;
+        scores.innerText =  `Score: ${score}`;
+    }
 }
 
 function resetBoard(){
