@@ -41,7 +41,7 @@ function hideCards(firstCard, secondCard) {
             }
         }
         resetBoard();
-    }, 1400);
+    }, 1300);
 }
 
 function unflipCards() {
@@ -50,7 +50,7 @@ function unflipCards() {
         firstCard.classList.remove('is-flipped');
         secondCard.classList.remove('is-flipped');
         resetBoard();
-    }, 1500);
+    }, 1300);
 }
 
 function resetBoard(){
