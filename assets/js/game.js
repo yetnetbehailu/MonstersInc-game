@@ -5,6 +5,7 @@ var cards = document.querySelectorAll('.card');
 let isCardFlipped = false;
 let firstCard, secondCard;
 let unableClick= false
+let timerRunning = false
 cards.forEach(card => {
 card.addEventListener('click', function cardFlipped() {
     if (unableClick) return;
@@ -13,6 +14,10 @@ card.addEventListener('click', function cardFlipped() {
         if (!isCardFlipped) {
             isCardFlipped = true;
             firstCard = this;
+            if(timerRunning == false){
+            startTimer();
+            timerRunning = true;
+        }
             return;
         } 
             secondCard = this;
@@ -60,3 +65,25 @@ function resetBoard(){
         card.style.order=randomPos;
     })
 })(); 
+
+
+//Timer functionallity
+var second = 59;
+var timer = document.querySelector(".timer");
+var countDown;
+function startTimer(){
+    countDown = setInterval(function(){
+        timer.innerText = `${"Tik Tok: 00:" +second+"s"}`;
+        second--; {
+            if(second < 0){ 
+                gameOver();
+            }
+        }
+    },1000);
+}
+
+function gameOver(){
+    clearInterval(countDown);
+}
+
+
