@@ -30,8 +30,13 @@ function checkForMatch() {
     matchMade ? hideCards(): unflipCards();
 }
 
-function hideCards(firstCard, secondCard) {
+//match- player recive points & cards hidden
+var scores=document.querySelector(".score")
+let score= 10;
+
+function hideCards() {
     unableClick=true;
+    isMatch= true;
     setTimeout(() => {
         var divs = document.getElementsByTagName('div');
         for (var i = divs.length; i--;) {
@@ -42,8 +47,11 @@ function hideCards(firstCard, secondCard) {
         }
         resetBoard();
     }, 1300);
+    scores.innerText =  `Score: ${score}`;
+            score += 10;
 }
 
+//Not a match
 function unflipCards() {
     unableClick=true;
     setTimeout(() => {
@@ -70,10 +78,10 @@ function resetBoard(){
 //Timer functionallity
 var second = 59;
 var timer = document.querySelector(".timer");
-var countDown;
+let countDown;
 function startTimer(){
     countDown = setInterval(function(){
-        timer.innerText = `${"Tik Tok: 00:" +second+"s"}`;
+        timer.innerText = `Tik Tok: 00:${second}s`;
         second--; {
             if(second < 0){ 
                 gameOver();
@@ -85,5 +93,3 @@ function startTimer(){
 function gameOver(){
     clearInterval(countDown);
 }
-
-
