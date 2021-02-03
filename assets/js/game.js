@@ -100,6 +100,6 @@ function gameOver(){
 
 //re-direct home btn
 
-document.getElementsByClassName(home).onclick= function (){
+document.getElementsByClassName("home").onclick= function (){
     location.href = "/index.html";
 }
