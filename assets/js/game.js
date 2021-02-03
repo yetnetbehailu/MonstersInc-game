@@ -97,3 +97,9 @@ function startTimer(){
 function gameOver(){
     clearInterval(countDown);
 }
+
+//re-direct home btn
+
+document.getElementsByClassName(home).onclick= function (){
+    location.href = "/index.html";
+}
