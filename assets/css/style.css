@@ -450,17 +450,12 @@ body {
 
 }
 
-@media screen and (max-width: 414px) {
-    .light-bulb {
-        top: 100%;
-    }
-}
+
 /* game page cards */
 .game-cards {
     width: 100%;
     height: 72px;
     perspective: 600px;
-    justify-content: center;
 }
 
 .card {
@@ -650,4 +645,12 @@ body {
     .copyright {
         font-size: 90%;
     }
+}
+
+ #wrapper {
+  width:615px ;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+justify-content: center;
 }
