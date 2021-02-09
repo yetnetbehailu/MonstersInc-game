@@ -38,13 +38,11 @@ function hideCards() {
     unableClick=true;
     isMatch= true;
     setTimeout(() => {
-        var divs = document.getElementsByTagName('div');
-        for (var i = divs.length; i--;) {
-            var div = divs[i];
-            if (div.className === 'card is-flipped') {
-                div.style.visibility = 'hidden';
+        cards.forEach((card) => {
+            if (card.classList.contains("is-flipped")) {
+                card.style.visibility = "hidden";
             }
-        }
+        });
         resetBoard();
     }, 1300);
     score += 10;
@@ -76,7 +74,7 @@ function resetBoard(){
         let randomPos = Math.floor(Math.random()*25);
         card.style.order=randomPos;
     })
-})(); 
+})();  
 
 
 //Timer functionallity
