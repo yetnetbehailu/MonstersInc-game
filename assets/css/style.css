@@ -324,10 +324,14 @@ h3 {
 .game-page {
     width: 100vw;
     height: 100vh;
+    background-image: url(images/background.png);
+    background-size: contain;
 }
 
-body {
-    background-image: url(images/background.png);
+@media screen and (max-width: 650px) {
+    .game-page  {
+        width: 650px;
+    }
 }
 
 .restart-home {
@@ -466,7 +470,7 @@ body {
     transform-style: preserve-3d;
     padding: 0;
     border: 0;
-    margin: 1%;
+    margin: 0.2%;
     transform-origin: center right;
 }
 
@@ -654,3 +658,4 @@ body {
   margin: auto;
 justify-content: center;
 }
+
