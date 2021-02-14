@@ -6,6 +6,9 @@ let isCardFlipped = false;
 let firstCard, secondCard;
 let unableClick= false
 let timerRunning = false
+let cardClick = 0;
+let attempts=document.querySelector("#penalties")
+
 cards.forEach(card => {
 card.addEventListener('click', function cardFlipped() {
     if (unableClick) return;
@@ -21,6 +24,8 @@ card.addEventListener('click', function cardFlipped() {
             return;
         } 
             secondCard = this;
+        cardClick+=1;
+        attempts.innerText = `Attempts:${cardClick}`;
             checkForMatch();
     });
 });
@@ -79,7 +84,7 @@ function resetBoard(){
 
 //Timer functionallity
 var second = 59;
-var timer = document.querySelector(".timer");
+var timer = document.querySelector("#timer");
 let countDown;
 function startTimer(){
     countDown = setInterval(function(){
