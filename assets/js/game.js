@@ -106,3 +106,12 @@ function gameOver(){
 document.getElementsByClassName("home").onclick= function (){
     location.href = "/index.html";
 }
+
+// Accessing the different levels
+
+sessionStorage.getItem("gameEasy")
+$("div").remove(".hide-medium, .hide-hard")
+$("#wrapper").css("width","407px")
+
+sessionStorage.getItem("gameMedium")
+$("div").remove(".hide-hard")

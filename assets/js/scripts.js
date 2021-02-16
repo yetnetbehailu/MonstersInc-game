@@ -64,18 +64,13 @@ function clickOutside(e) {
 
 // Accessing the different levels
 
-$("#easy").click(function(){   
+$('#easy').click(function() {
+    sessionStorage.setItem("gameLevel", "easy");
+  });
+  $('#medium').click(function() {
+    sessionStorage.setItem("gameLevel", "medium");
+  });
+  $('#hard').click(function() {
+    sessionStorage.setItem("gameLevel", "hard");
+  });
 
-    $("card").toggle();
-});
-
-
-function easylevel() {
-
-}
-
-function mediumlevel() {
-}
-
-function hardlevel() {
-}
