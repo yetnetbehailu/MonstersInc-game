@@ -109,9 +109,20 @@ document.getElementsByClassName("home").onclick= function (){
 
 // Accessing the different levels
 
-sessionStorage.getItem("gameEasy")
-$("div").remove(".hide-medium, .hide-hard")
-$("#wrapper").css("width","407px")
+let gameLevel = sessionStorage.getItem("gameLevel");
+gameSetUp();
 
-sessionStorage.getItem("gameMedium")
-$("div").remove(".hide-hard")
+ function gameSetUp() {
+    switch (gameLevel) {
+      case ("easy"):
+        $(".hide-medium, .hide-hard").remove();
+        $("#wrapper").css("width","407px")
+        break;
+      case ("medium"):
+        $('.hide-hard').remove();
+        $(".card").css("height","145px")
+        break;
+      case ("hard"):
+        break;
+    }
+  }
