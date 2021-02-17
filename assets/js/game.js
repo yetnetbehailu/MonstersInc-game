@@ -41,7 +41,6 @@ let score= 0;
 
 function hideCards() {
     unableClick=true;
-    isMatch= true;
     setTimeout(() => {
         cards.forEach((card) => {
             if (card.classList.contains("is-flipped")) {
