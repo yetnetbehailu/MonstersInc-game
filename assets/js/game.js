@@ -27,8 +27,10 @@ function cardFlipped() {
             return;
         } 
             secondCard = this;
-        cardClick+=pairFlips;
-        attempts.innerText = `Attempts:${cardClick}`;
+            if(gameLevel=="easy"){
+            cardClick+=pairFlips;
+            attempts.innerText = `Attempts:${cardClick}`;
+            }
             checkForMatch();
     }
 
@@ -68,6 +70,10 @@ function unflipCards() {
     if(score>0){
         score-=2;
         scores.innerText =  `Score: ${score}`;
+    }
+    if(gameLevel=="medium"||gameLevel=="hard"){
+    cardClick-=pairFlips;
+    attempts.innerText = `Attempts:${cardClick}`;
     }
 }
 
@@ -127,10 +133,13 @@ let bonusTime;
       case ("medium"):
         $('.hide-hard').remove();
         $(".card").css("height","145px")
+        cardClick=5;
         pairFlips=1;
         bonusTime=3
         break;
       case ("hard"):
-          bonusTime=3
+        bonusTime=3
+        cardClick=5;
+        pairFlips=1;
         break;
     }
