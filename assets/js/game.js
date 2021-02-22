@@ -136,10 +136,12 @@ let bonusTime;
         cardClick=5;
         pairFlips=1;
         bonusTime=3
+        attempts.innerText = `Attempts:5`;
         break;
       case ("hard"):
         bonusTime=3
         cardClick=5;
         pairFlips=1;
+        attempts.innerText = `Attempts:5`;
         break;
     }
