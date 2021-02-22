@@ -57,6 +57,11 @@ function hideCards() {
     score += 10;
     scores.innerText =  `Score: ${score}`;
     second+=bonusTime;
+    if(gameLevel=="medium"||gameLevel=="hard"){
+    cardClick+=pairFlips;
+    attempts.innerText = `Attempts:${cardClick}`;
+    }
+
 }
 
 //Not a match
@@ -140,8 +145,8 @@ let bonusTime;
         break;
       case ("hard"):
         bonusTime=3
-        cardClick=5;
+        cardClick=10;
         pairFlips=1;
-        attempts.innerText = `Attempts:5`;
+        attempts.innerText = `Attempts:10`;
         break;
     }
