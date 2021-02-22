@@ -54,6 +54,7 @@ function hideCards() {
     }, 1300);
     score += 10;
     scores.innerText =  `Score: ${score}`;
+    second+=bonusTime;
 }
 
 //Not a match
@@ -121,6 +122,7 @@ let bonusTime;
         $("#wrapper").css("width","407px")
         pairFlips=1;
         cardClick=0;
+        bonusTime=0;
         break;
       case ("medium"):
         $('.hide-hard').remove();
@@ -129,5 +131,6 @@ let bonusTime;
         bonusTime=3
         break;
       case ("hard"):
+          bonusTime=3
         break;
     }
