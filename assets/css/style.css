@@ -400,7 +400,7 @@ h3 {
 }
 
 /* timer */
-.timer {
+#timer {
     margin-right: auto;
     font-family: "Chicle", "Open-Sans";
     color: #000;
@@ -428,7 +428,7 @@ h3 {
     }
 }
 
-.penalties {
+#penalties {
     font-family: "Chicle", "Open-Sans";
     color: #000;
     background-color: #24FF00;
