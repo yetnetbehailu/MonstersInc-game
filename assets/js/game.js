@@ -6,11 +6,14 @@ let isCardFlipped = false;
 let firstCard, secondCard;
 let unableClick= false
 let timerRunning = false
-let cardClick = 0;
+let cardClick;
 let attempts=document.querySelector("#penalties")
 
 cards.forEach(card => {
-card.addEventListener('click', function cardFlipped() {
+card.addEventListener('click', cardFlipped);
+});
+
+function cardFlipped() {
     if (unableClick) return;
     if (this=== firstCard) return;
         this.classList.add('is-flipped');
@@ -24,11 +27,11 @@ card.addEventListener('click', function cardFlipped() {
             return;
         } 
             secondCard = this;
-        cardClick+=1;
+        cardClick+=pairFlips;
         attempts.innerText = `Attempts:${cardClick}`;
             checkForMatch();
-    });
-});
+    }
+
 //check for match...
 function checkForMatch() {
     let matchMade = firstCard.dataset.character === secondCard.dataset.character;
@@ -109,19 +112,22 @@ document.getElementsByClassName("home").onclick= function (){
 // Accessing the different levels
 
 let gameLevel = sessionStorage.getItem("gameLevel");
-gameSetUp();
+let pairFlips;
+let bonusTime;
 
- function gameSetUp() {
     switch (gameLevel) {
       case ("easy"):
         $(".hide-medium, .hide-hard").remove();
         $("#wrapper").css("width","407px")
+        pairFlips=1;
+        cardClick=0;
         break;
       case ("medium"):
         $('.hide-hard').remove();
         $(".card").css("height","145px")
+        pairFlips=1;
+        bonusTime=3
         break;
       case ("hard"):
         break;
     }
-  }
