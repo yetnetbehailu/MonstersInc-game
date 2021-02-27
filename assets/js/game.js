@@ -80,6 +80,9 @@ function unflipCards() {
     cardClick-=pairFlips;
     attempts.innerText = `Attempts:${cardClick}`;
     }
+    if(cardClick<1){
+        gameOver();
+    }
 }
 
 function resetBoard(){
@@ -111,9 +114,29 @@ function startTimer(){
     },1000);
 }
 
+let noWin = document.querySelector(".noWin-modal")
+
 function gameOver(){
     clearInterval(countDown);
+        setTimeout(()=> {
+            if (second<0 || cardClick<1){
+        noWin.style.display = "block";
+    }
+    else{
+        noWin.style.display= "hidden";
+    }
+    },1000);
 }
+
+//continue playing yesbtn
+$('#yesBtn').click(function() {
+    location.reload();
+});
+
+//exit game nobtn
+$("#noBtn").click(function(){
+    window.location.href="/index.html"
+})
 
 //re-direct home btn
 
