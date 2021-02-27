@@ -703,6 +703,14 @@ justify-content: center;
     padding: 10px;
     border-radius: 5px;
     font-family: "Chicle", "Open-Sans";
+    position: relative;
+    top: 0;
+    animation: slide 1.2s linear;
+}
+
+@keyframes slide {
+  from {top: -100%;}
+  to {top: 0;}
 }
 
 .noWin-title {
