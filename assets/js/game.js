@@ -8,6 +8,7 @@ let unableClick= false
 let timerRunning = false
 let cardClick;
 let attempts=document.querySelector("#penalties")
+let matchCounter= 0;
 
 cards.forEach(card => {
 card.addEventListener('click', cardFlipped);
@@ -52,6 +53,10 @@ function hideCards() {
                 card.style.visibility = "hidden";
             }
         });
+        matchCounter+=1;
+            if (gameLevel=="easy" && matchCounter == 6 || gameLevel=="medium" && matchCounter == 9 || gameLevel=="hard" && matchCounter == 12){
+                gameWon();
+            }
         resetBoard();
     }, 1300);
     score += 10;
@@ -115,6 +120,7 @@ function startTimer(){
 }
 
 let noWin = document.querySelector(".noWin-modal")
+let win = document.querySelector(".win-modal")
 
 function gameOver(){
     clearInterval(countDown);
@@ -128,6 +134,13 @@ function gameOver(){
     },1000);
 }
 
+function gameWon(){
+    clearInterval(countDown);
+        setTimeout(()=> {
+        win.style.display = "block";
+    },1000);
+}
+
 //continue playing yesbtn
 $('#yesBtn').click(function() {
     location.reload();
@@ -135,6 +148,15 @@ $('#yesBtn').click(function() {
 
 //exit game nobtn
 $("#noBtn").click(function(){
+    window.location.href="/index.html"
+})
+
+$('#iDoBtn').click(function() {
+    location.reload();
+});
+
+//exit game nobtn
+$("#iDontBtn").click(function(){
     window.location.href="/index.html"
 })
 
