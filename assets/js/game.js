@@ -193,5 +193,7 @@ let bonusTime;
         cardClick=10;
         pairFlips=1;
         attempts.innerText = `Attempts:10`;
+        $(".card").css("height","125px")
+        $(".trackboard").css("margin-bottom","8%")
         break;
     }
