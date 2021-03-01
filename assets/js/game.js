@@ -166,6 +166,12 @@ document.getElementsByClassName("home").onclick= function (){
     location.href = "/index.html";
 }
 
+//reset board btn
+$(".restart").click(function(){
+    location.reload();
+})
+
+
 // Accessing the different levels
 
 let gameLevel = sessionStorage.getItem("gameLevel");
