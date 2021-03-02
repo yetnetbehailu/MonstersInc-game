@@ -6,13 +6,13 @@ function togglePlay() {
 };
 
 //How to play -Modal code sourced from Url (https://www.youtube.com/watch?v=6ophW7Ask_0)
-var customModal = document.getElementById("instructionsmodal");
+var infoModal = document.getElementById("instructionsmodal");
 
-var customBtn = document.getElementById("customBtn");
+var infoBtn = document.getElementById("infoBtn");
 
 var closeBtn = document.getElementsByClassName("closeBtn")[0];
 
-customBtn.addEventListener("click", openModal);
+infoBtn.addEventListener("click", openModal);
 
 closeBtn.addEventListener("click", closeModal);
 

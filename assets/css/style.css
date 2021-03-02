@@ -175,7 +175,7 @@
 }
 
 /* Btn modal sourced from url(https://www.youtube.com/watch?v=6ophW7Ask_0) modified according to personal criterias*/
-.custom-modal {
+.info-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -212,21 +212,26 @@
     }
 }
 
-.custom-modal-content {
+.info-modal-content {
     background-color: #257ac9;
     color: #000;
     margin: 5% auto;
     padding: 20px;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
 
+@media screen and (max-width: 530px) {
+    .info-modal-content {
+        width: 90%;
+    }
+}
 
 h3 {
     text-align: center;
 }
 
-.custom-modal-body {
+.info-modal-body {
     font-size: 21px;
 }
 
@@ -486,9 +491,15 @@ td {
     margin-bottom: 7%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 610px) {
     .trackboard {
-        margin-bottom: 9%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .trackboard {
+        margin-bottom: 5%;
     }
 }
 
@@ -521,7 +532,18 @@ td {
     position: absolute;
     top: -49px;
     width: 13%;
+}
 
+@media screen and (min-width:790px) and (max-width:1010px){
+    .light-bulb {
+        width: 11%;
+    }
+}
+
+@media screen and (min-width:1011px){
+    .light-bulb {
+        width: 9%;
+    }
 }
 
 
