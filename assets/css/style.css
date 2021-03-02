@@ -247,6 +247,29 @@ h3 {
     transform: scale(1.1);
 }
 
+#info-timeBonus{
+    margin: 0 auto 5px;
+}
+
+tbody{
+    border-color:#000 ;
+    border-style: groove ;
+}
+
+th {
+    padding: 4px;
+    border: groove #000;
+}
+
+td {
+    padding: 4px;
+    border: groove #000;
+    text-align: center;
+}
+
+#info-flipLimit{
+    margin:0 auto 5px;
+}
 
 
 /* start game modal */
