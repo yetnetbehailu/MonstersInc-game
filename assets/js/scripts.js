@@ -1,6 +1,6 @@
  // index js code...
  // Sound
- function togglePlay() {
+function togglePlay() {
         let audio = document.getElementById("audio");
         return audio.paused ? audio.play() : audio.pause();
 };
@@ -64,13 +64,13 @@ function clickOutside(e) {
 
 // Accessing the different levels
 
-$('#easy').click(function() {
+$("#easy").click(function() {
     sessionStorage.setItem("gameLevel", "easy");
-  });
-  $('#medium').click(function() {
+});
+$("#medium").click(function() {
     sessionStorage.setItem("gameLevel", "medium");
-  });
-  $('#hard').click(function() {
+});
+$("#hard").click(function() {
     sessionStorage.setItem("gameLevel", "hard");
-  });
+});
 
