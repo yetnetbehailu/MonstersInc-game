@@ -1,129 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="MonstersInc" content="Memory card game"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<title>Monsters Inc memory game</title>
-</head>
-<body>
-    <!--Landing page-->      
-    <section class="home-page container-fluid">
-    <div class="row">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Memory card game" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <title>Monsters Inc memory game</title>
+    </head>
+    <body>
+        <!--Landing page-->
+        <section class="home-page container-fluid">
+            <div class="row">
                 <div class="col-12 volume">
-                    <button type="button" class="sound hvr-glow"  onclick="togglePlay()">
-                <i class="fas fa-volume-up"></i>
-                <audio id="audio" src="assets/audio/monsters-audio.mp3" loop></audio>
+                    <button type="button" class="sound hvr-glow" onclick="togglePlay()">
+                        <i class="fas fa-volume-up"></i>
+                        <audio id="audio" src="assets/audio/monsters-audio.mp3" loop></audio>
                     </button>
-                </div>        
-            </div>
-            <div class="row">   
-                <div class="col-12 logo">
-                <img class="logo" src="assets/css/images/monsterslogo.png" alt="monsters inc logo">
                 </div>
             </div>
-            <div class="row">   
+            <div class="row">
+                <div class="col-12 logo">
+                    <img class="logo" src="assets/css/images/monsterslogo.png" alt="monsters inc logo" />
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12">
                     <h1 class="head-titel">Memory Game</h1>
-                </div>    
-            </div>
-            <div class="row">   
-                <div class="col-12 main-image">
-                <img class="inc" src="assets/css/images/monsters-inc.jpg" alt="monsters inc crew">
                 </div>
             </div>
-            <div class="row">   
+            <div class="row">
+                <div class="col-12 main-image">
+                    <img class="inc" src="assets/css/images/monsters-inc.jpg" alt="monsters inc crew" />
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 primary-buttons">
                     <!-- Modals sourced from url(https://www.youtube.com/watch?v=6ophW7Ask_0) -->
                     <button id="infoBtn" class="btn button btn-primary btn-lg hvr-pulse">How to play</button>
                     <!-- instructions modal -->
-        <div class="info-modal" id="instructionsmodal">
-            <div class="info-modal-content">
-                <span class="closeBtn hvr-grow-shadow">&times;</span>
-            <div class="info-modal-header">
-            <h3 class="info-modal-title" >Instructions</h3>
-            </div>
-            <div class="info-modal-body">
-                <p>In a world inhabited by monsters, the city of Monstropolis is powered <br> by energy from the screams of human children. At the Monsters, Inc. factory, skilled monsters employed as "scarers" venture into the human world to scare children and harvest their screams, through doors that activate portals to children's bedroom closets. <br> The monsters are counting on you to help them with their mission!</p>
-            <p> <i class="fab fa-optin-monster"></i>- You need to find all the matching card pairs before times up! <br> If the two cards turned picture-side-up are identical it's a match. Each match made you will receive 10 points. Depending on game level a time bonus will be added when a pair is found.</p>
-            <table id="info-timeBonus">
-                <tbody>
-                    <tr>
-                        <th>Game Level</th>
-                        <th>Time Bonus</th>
-                    </tr>
-                    <tr>
-                        <td>Easy</td>
-                        <td>0seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Medium</td>
-                        <td>3seconds</td>
-                    </tr>
-                    <tr>
-                        <td>Hard</td>
-                        <td>3seconds</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><i class="fab fa-optin-monster"></i>- However careful not to make to many mistakes as score will be deducted by 2 points for each mismatch. Also depending on game level there will be a draw limit.</p>
-            <table id="info-flipLimit">
-                <tbody>
-                    <tr>
-                        <th>Game Level</th>
-                        <th>Flip limit</th>
-                    </tr>
-                    <tr>
-                        <td>Easy</td>
-                        <td>No limit</td>
-                    </tr>
-                    <tr>
-                        <td>Medium</td>
-                        <td>5 Flips</td>
-                        <td> +1 each pair found</td>
-                    </tr>
-                    <tr>
-                        <td>Hard</td>
-                        <td>10 Flips</td>
-                        <td> +1 each pair found</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><i class="fab fa-optin-monster"></i>- Press <i class="fas fa-undo"></i> to re-load game or <i class="fas fa-home"></i> to get back to home page.</p>
-            <p><i class="fab fa-optin-monster"></i>- If you would like to listen to some groovy music before game starts click on <i class="fas fa-volume-up"></i> click again to turn it off.</p>
-            </div>
-            </div>
-        </div> <!-- modal ends -->
-            <!-- game level modal -->
+                    <div class="info-modal" id="instructionsmodal">
+                        <div class="info-modal-content">
+                            <span class="closeBtn hvr-grow-shadow">&times;</span>
+                            <div class="info-modal-header">
+                                <h3 class="info-modal-title">Instructions</h3>
+                            </div>
+                            <div class="info-modal-body">
+                                <p>
+                                    In a world inhabited by monsters, the city of Monstropolis is powered <br />
+                                    by energy from the screams of human children. At the Monsters, Inc. factory, skilled monsters employed as "scarers" venture into the human world to scare children and harvest their screams, through doors
+                                    that activate portals to children's bedroom closets. <br />
+                                    The monsters are counting on you to help them with their mission!
+                                </p>
+                                <p>
+                                    <i class="fab fa-optin-monster"></i>- You need to find all the matching card pairs before times up! <br />
+                                    If the two cards turned picture-side-up are identical it's a match. Each match made you will receive 10 points. Depending on game level a time bonus will be added when a pair is found.
+                                </p>
+                                <table id="info-timeBonus">
+                                    <tbody>
+                                        <tr>
+                                            <th>Game Level</th>
+                                            <th>Time Bonus</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Easy</td>
+                                            <td>0seconds</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medium</td>
+                                            <td>3seconds</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hard</td>
+                                            <td>3seconds</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><i class="fab fa-optin-monster"></i>- However careful not to make to many mistakes as score will be deducted by 2 points for each mismatch. Also depending on game level there will be a draw limit.</p>
+                                <table id="info-flipLimit">
+                                    <tbody>
+                                        <tr>
+                                            <th>Game Level</th>
+                                            <th>Flip limit</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Easy</td>
+                                            <td>No limit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medium</td>
+                                            <td>5 Flips</td>
+                                            <td>+1 each pair found</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hard</td>
+                                            <td>10 Flips</td>
+                                            <td>+1 each pair found</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><i class="fab fa-optin-monster"></i>- Press <i class="fas fa-undo"></i> to re-load game or <i class="fas fa-home"></i> to get back to home page.</p>
+                                <p><i class="fab fa-optin-monster"></i>- If you would like to listen to some groovy music before game starts click on <i class="fas fa-volume-up"></i> click again to turn it off.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal ends -->
+                    <!-- game level modal -->
                     <button id="gameBtn" class="btn button btn-primary btn-lg hvr-pulse">Start Game</button>
-                <div class="game-modal" id="gamemodal">
-            <div class="game-modal-content">
-                <span class="shutBtn hvr-grow-shadow">&times;</span>
-            <div class="game-modal-header">
-            <h3 class="game-modal-title" >Game Levels</h3>
-            </div>
-            <div class="game-modal-body">
-                <div class="levelsBtn">
-                    <a href="game.html" class="game-level btn btn-success" role="button" id="easy">Easy</a>
-                    <a href="game.html" class="game-level btn btn-success" role="button" id="medium">Medium</a>
-                    <a href="game.html" class="game-level btn btn-success" role="button" id="hard">Hard</a>
+                    <div class="game-modal" id="gamemodal">
+                        <div class="game-modal-content">
+                            <span class="shutBtn hvr-grow-shadow">&times;</span>
+                            <div class="game-modal-header">
+                                <h3 class="game-modal-title">Game Levels</h3>
+                            </div>
+                            <div class="game-modal-body">
+                                <div class="levelsBtn">
+                                    <a href="game.html" class="game-level btn btn-success" role="button" id="easy">Easy</a>
+                                    <a href="game.html" class="game-level btn btn-success" role="button" id="medium">Medium</a>
+                                    <a href="game.html" class="game-level btn btn-success" role="button" id="hard">Hard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div> 
-                </div>
-            </div>
-    </section>
-    <footer class="fixed-bottom home-footer"> 
-    <p class="copyright">Copyright: Monsters Inc memory game for educational purposes</p>
-    </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="assets/js/scripts.js"></script>
-</body>
+        </section>
+        <footer class="fixed-bottom home-footer">
+            <p class="copyright">Copyright: Monsters Inc memory game for educational purposes</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
 </html>

@@ -1,143 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="MonstersInc" content="Memory card game"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<title>Monsters Inc memory game</title>
-</head>
-<body class="game-page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Memory card game" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <title>Monsters Inc memory game</title>
+    </head>
+    <body class="game-page">
         <div class="container-fluid">
             <div class="game-header">
-            <div class="row">
-                <div class="col-12 restart-home">
-                    <span id="timer">Tik Tok: 01:00</span>
-                    <button type="button" class="restart hvr-push">
-                <i class="fas fa-undo"></i>
-                    </button>
-                    <button type="button" onclick="location.href='/index.html'" class="home hvr-push">
-                <i class="fas fa-home"></i>
-                    </button>
-                </div>        
-            </div>
-            <div class="row">
-                <div class="col-12 trackboard">
-                    <span id="penalties">Attempts:0</span><img class="light-bulb" src="assets/css/images/lamp.png" alt="Image of light bulb"><span class="score">Score: 0</span>
+                <div class="row">
+                    <div class="col-12 restart-home">
+                        <span id="timer">Tik Tok: 01:00</span>
+                        <button type="button" class="restart hvr-push">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                        <button type="button" onclick="location.href='/index.html'" class="home hvr-push">
+                            <i class="fas fa-home"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 trackboard"><span id="penalties">Attempts:0</span><img class="light-bulb" src="assets/css/images/lamp.png" alt="Image of light bulb" /><span class="score">Score: 0</span></div>
                 </div>
             </div>
-            </div>
             <div id="wrapper">
-        <div class="row game-cards">
-                <!-- easy level 4 x 3 =12 cards-->  <!-- card flip code sourced https://3dtransforms.desandro.com/card-flip -->
-            <div class="card" data-character="boo">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back boo"></div>
-            </div>
-            <div class="card" data-character="boo">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back boo"></div>
-            </div>
-            <div class="card" data-character="sully">                
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back sully"></div>
-            </div>
-            <div class="card" data-character="sully">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back sully"></div>
-            </div>
-            <div class="card" data-character="mike">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back mike"></div>
-            </div>
-            <div class="card" data-character="mike">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back mike"></div>
-            </div>
-            <div class="card" data-character="cleaner">                
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back cleaner"></div>
-            </div>
-            <div class="card" data-character="cleaner">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back cleaner"></div>
-            </div>
-            <div class="card" data-character="lizzard">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back lizzard"></div>
-            </div>
-            <div class="card" data-character="lizzard">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back lizzard"></div>
-            </div>
-            <div class="card" data-character="mrcrab">                
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back mrcrab"></div>
-            </div>
-            <div class="card" data-character="mrcrab">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back mrcrab"></div>
-            </div>    <!-- easy level ends -->
-            <div class="card hide-medium" data-character="twins">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back twins"></div>
-            </div>
-            <div class="card hide-medium" data-character="twins">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back twins"></div>
-            </div>
-            <div class="card hide-medium" data-character="octopus">                
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back octopus"></div>
-            </div>
-            <div class="card hide-medium" data-character="octopus">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back octopus"></div>
-            </div>
-            <div class="card hide-medium" data-character="purple">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back purple"></div>      
-            </div> 
-            <div class="card hide-medium" data-character="purple">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back purple"></div>      
-            </div>         <!-- medium level 3x6=18 cards  ends  -->
-            <div class="card hide-hard" data-character="don">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back don"></div>
-            </div>
-            <div class="card hide-hard" data-character="don">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back don"></div>
-            </div>
-            <div class="card hide-hard" data-character="engineer">                
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back engineer"></div>
-            </div>
-            <div class="card hide-hard" data-character="engineer">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back engineer"></div>
-            </div>
-            <div class="card hide-hard" data-character="deanscrib">
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back deanscrib"></div>
-            </div>
-            <div class="card hide-hard" data-character="deanscrib">                 
-                <div class="card__face card__face--front"></div>
-                <div class="card__face card__face--back deanscrib"></div>
-            </div><!-- hard level 4x6=24 cards   ends-->
-            </div>
+                <div class="row game-cards">
+                    <!-- easy level 4 x 3 =12 cards-->
+                    <!-- card flip code sourced https://3dtransforms.desandro.com/card-flip -->
+                    <div class="card" data-character="boo">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back boo"></div>
+                    </div>
+                    <div class="card" data-character="boo">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back boo"></div>
+                    </div>
+                    <div class="card" data-character="sully">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back sully"></div>
+                    </div>
+                    <div class="card" data-character="sully">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back sully"></div>
+                    </div>
+                    <div class="card" data-character="mike">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back mike"></div>
+                    </div>
+                    <div class="card" data-character="mike">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back mike"></div>
+                    </div>
+                    <div class="card" data-character="cleaner">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back cleaner"></div>
+                    </div>
+                    <div class="card" data-character="cleaner">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back cleaner"></div>
+                    </div>
+                    <div class="card" data-character="lizzard">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back lizzard"></div>
+                    </div>
+                    <div class="card" data-character="lizzard">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back lizzard"></div>
+                    </div>
+                    <div class="card" data-character="mrcrab">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back mrcrab"></div>
+                    </div>
+                    <div class="card" data-character="mrcrab">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back mrcrab"></div>
+                    </div>
+                    <!-- easy level ends -->
+                    <div class="card hide-medium" data-character="twins">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back twins"></div>
+                    </div>
+                    <div class="card hide-medium" data-character="twins">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back twins"></div>
+                    </div>
+                    <div class="card hide-medium" data-character="octopus">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back octopus"></div>
+                    </div>
+                    <div class="card hide-medium" data-character="octopus">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back octopus"></div>
+                    </div>
+                    <div class="card hide-medium" data-character="purple">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back purple"></div>
+                    </div>
+                    <div class="card hide-medium" data-character="purple">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back purple"></div>
+                    </div>
+                    <!-- medium level 3x6=18 cards  ends  -->
+                    <div class="card hide-hard" data-character="don">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back don"></div>
+                    </div>
+                    <div class="card hide-hard" data-character="don">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back don"></div>
+                    </div>
+                    <div class="card hide-hard" data-character="engineer">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back engineer"></div>
+                    </div>
+                    <div class="card hide-hard" data-character="engineer">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back engineer"></div>
+                    </div>
+                    <div class="card hide-hard" data-character="deanscrib">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back deanscrib"></div>
+                    </div>
+                    <div class="card hide-hard" data-character="deanscrib">
+                        <div class="card__face card__face--front"></div>
+                        <div class="card__face card__face--back deanscrib"></div>
+                    </div>
+                    <!-- hard level 4x6=24 cards   ends-->
+                </div>
             </div>
             <div class="noWin-modal fadeIn" id="game-lost">
                 <div class="noWin-content">
                     <div class="noWin-header">
                         <p class="noWin-title"><i class="far fa-sad-tear"></i>Game Over<i class="far fa-sad-tear"></i></p>
-                    </div>    
+                    </div>
                     <div class="noWin-body">
-                        <p>Ohhhh noo! <br> Mission failed there's not enough energy to power Monstropolis, everyone is counting on you! <br> Would you like to try again?</p>
+                        <p>
+                            Ohhhh noo! <br />
+                            Mission failed there's not enough energy to power Monstropolis, everyone is counting on you! <br />
+                            Would you like to try again?
+                        </p>
                     </div>
                     <div class="noWin-footer">
                         <button type="button" class="noWin-Btn hvr-push" id="yesBtn">Yes</button>
@@ -149,9 +155,14 @@
                 <div class="win-content">
                     <div class="win-header">
                         <p class="win-title"><i class="far fa-laugh-beam"></i>Game Won<i class="far fa-laugh-beam"></i></p>
-                    </div>    
+                    </div>
                     <div class="win-body">
-                        <p>Congrats you did it!<br> Mission accomplished the monsters of Monstroplolis thank you <br> for re-storing the energy level needed to power their city! <br> Would you like to try again?</p>
+                        <p>
+                            Congrats you did it!<br />
+                            Mission accomplished the monsters of Monstroplolis thank you <br />
+                            for re-storing the energy level needed to power their city! <br />
+                            Would you like to try again?
+                        </p>
                     </div>
                     <div class="win-footer">
                         <button type="button" class="win-Btn hvr-push" id="iDoBtn">Yes</button>
@@ -160,12 +171,12 @@
                 </div>
             </div>
         </div>
-    <footer class="fixed-bottom game-footer">
-    <p class="copyright">Copyright: Monsters Inc memory game for educational purposes</p>
-    </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="assets/js/game.js"></script>
-</body>
+        <footer class="fixed-bottom game-footer">
+            <p class="copyright">Copyright: Monsters Inc memory game for educational purposes</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/game.js"></script>
+    </body>
 </html>
