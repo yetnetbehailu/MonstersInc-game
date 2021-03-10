@@ -389,12 +389,6 @@ td {
     background-size: contain;
 }
 
-@media screen and (max-width: 650px) {
-    .game-page {
-        width: 650px;
-    }
-}
-
 .restart-home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,13 +485,7 @@ td {
     margin-bottom: 7%;
 }
 
-@media screen and (min-width: 610px) {
-    .trackboard {
-        margin-bottom: 3%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .trackboard {
         margin-bottom: 5%;
     }
@@ -529,14 +517,13 @@ td {
 
 
 .light-bulb {
-    position: absolute;
-    top: -49px;
-    width: 13%;
+    width: 11%;
 }
 
-@media screen and (min-width:790px) and (max-width:1010px){
+@media screen and (min-width:414px){
     .light-bulb {
-        width: 11%;
+        position: absolute;
+        top: -49px;
     }
 }
 
@@ -553,10 +540,12 @@ td {
     height: 72px;
     -webkit-perspective: 600px;
     perspective: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-    width: 100px;
+    width: 100px;    
     height: 160px;
     position: relative;
     -webkit-transition: -webkit-transform 1s;
@@ -574,9 +563,103 @@ td {
     transform-origin: center right;
 }
 
-@media screen and (min-width: 1024px) {
-    .card {
-        height: 145px;
+@media screen and (max-width:392px){
+    .easy-card {
+        width: 71px;
+        height: 125px;
+    }
+}
+
+@media screen and (min-width:393px){
+    .easy-card {
+    width: 89px;
+    height: 145px;
+    }
+}
+
+@media screen and (min-width: 485px){
+.easy-card {
+    width: 111px;
+    height: 130px;
+    }
+}
+
+@media screen and (min-width: 597px) {
+.easy-card {
+    width: 139px;
+    height: 158px;
+    }
+}
+
+@media screen and (min-width: 740px) {
+.easy-card {
+    width: 151px;
+    height: 158px;
+    }
+}
+
+@media screen and (min-width: 768px){
+.easy-card {
+    width: 125px;
+    height: 180px;
+    }
+}
+
+.medium-card {
+    width: 15%;
+}
+
+@media screen and (max-width: 375px){
+.medium-card {
+    height: 98px;
+    }
+}
+
+@media screen and (min-width: 376px){
+.medium-card {
+    height: 110px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+.medium-card {
+    height: 140px;
+    }
+}
+
+@media screen and (min-width: 768px){
+.medium-card {
+    height: 180px;
+    }
+}
+
+@media screen and (min-width: 900px){
+.medium-card {
+    height: 177px;
+    width: 14%;
+    }
+}
+
+.hard-card {
+    width: 15%;
+}
+
+@media screen and (max-width: 476px){
+.hard-card {
+    height: 87px;
+    }
+}
+
+@media screen and (min-width: 477px) and (max-width:767px){
+.hard-card {
+    height: 115px;
+    }
+}
+
+@media screen and (min-width: 769px){
+.hard-card {
+    width: 14%;
+    height: 133px;
     }
 }
 
@@ -768,7 +851,7 @@ td {
 }
 
 #wrapper {
-    width: 615px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -780,6 +863,11 @@ td {
     justify-content: center;
 }
 
+@media screen and (min-width: 768px){
+#wrapper {
+    width: 550px;
+    }
+}
 /* GAME-OVER modal notification*/
 .noWin-modal {
     display: none;
@@ -818,7 +906,7 @@ td {
 }
 
 .noWin-content {
-    width: 40%;
+    width: 75%;
     background-color: #f3ff38;
     color: #000;
     margin: 30% auto;
@@ -922,30 +1010,23 @@ td {
     font-size: larger;
 }
 
-@media only screen and (min-width:320px) and (max-width:805px) {
+@media only screen and (min-width:373px) and (max-width:768px) {
     .noWin-content {
-        width: 45%;
+        width: 77%;
     }
 }
 
-@media only screen and (min-width:905px) and (max-width:953px) {
+@media only screen and (min-width:769px) {
     .noWin-content {
-        width: 38%;
+        width: 68%;
     }
 }
 
-@media only screen and (min-width:954px) and (max-width:1168px) {
+@media only screen and (min-width:1024px) {
     .noWin-content {
-        width: 31%;
+        width: 51%;
     }
 }
-
-@media only screen and (min-width:1168px) and (max-width:1440px) {
-    .noWin-content {
-        width: 25%;
-    }
-}
-
 
 /* Game Won modal */
 .win-modal {
@@ -975,7 +1056,7 @@ td {
 }
 
 .win-content {
-    width: 40%;
+    width: 75%;
     background-color: #f3ff38;
     color: #000;
     margin: 30% auto;
@@ -995,6 +1076,25 @@ td {
 
     to {
         top: 0;
+    }
+}
+
+
+@media only screen and (min-width:375px) and (max-width:474px){
+    .win-content {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width:475px) and (max-width:949px){
+    .win-content {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width:950px) {
+    .win-content {
+        width: 38%;
     }
 }
 
@@ -1055,22 +1155,4 @@ td {
     background-color: #f92f26;
     width: 15%;
     font-size: larger;
-}
-
-@media only screen and (min-width:320px) and (max-width:750px) {
-    .win-content {
-        width: 55%;
-    }
-}
-
-@media only screen and (min-width:751px) and (max-width:949px) {
-    .win-content {
-        width: 48%;
-    }
-}
-
-@media only screen and (min-width:950px) {
-    .win-content {
-        width: 38%;
-    }
 }
