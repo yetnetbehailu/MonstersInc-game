@@ -177,28 +177,41 @@ $(".restart").click(function () {
 let gameLevel = sessionStorage.getItem("gameLevel");
 let pairFlips;
 let bonusTime;
+const mediaQuery = window.matchMedia("(min-width:320px)")
 
 switch (gameLevel) {
     case ("easy"):
         $(".hide-medium, .hide-hard").remove();
-        $("#wrapper").css("width", "407px")
+        cards.forEach(card => {
+            card.classList.add("easy-card");
+        });
         pairFlips = 1;
         cardClick = 0;
         bonusTime = 0;
         break;
     case ("medium"):
         $(".hide-hard").remove();
-        $(".card").css("height", "145px")
         cardClick = 5;
         pairFlips = 1;
         bonusTime = 3
         attempts.innerText = `Attempts:5`;
+        cards.forEach(card => {
+            card.classList.add("medium-card");
+        });
+        if (mediaQuery.matches) { 
+            $("#wrapper").css("width","100%")
+        }
         break;
     case ("hard"):
         bonusTime = 3
         cardClick = 10;
         pairFlips = 1;
         attempts.innerText = `Attempts:10`;
-        $(".card").css("height", "125px")
+        cards.forEach(card => {
+            card.classList.add("hard-card");
+        });
+                if (mediaQuery.matches) { 
+            $("#wrapper").css("width","100%")
+        }
         break;
 }
