@@ -615,27 +615,15 @@ td {
     }
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 376px) and (max-width:649px){
 .medium-card {
     height: 110px;
     }
 }
 
-@media screen and (min-width: 650px) {
-.medium-card {
-    height: 140px;
-    }
-}
-
-@media screen and (min-width: 768px){
-.medium-card {
-    height: 180px;
-    }
-}
-
 @media screen and (min-width: 900px){
 .medium-card {
-    height: 177px;
+    height: 155px;
     width: 14%;
     }
 }
@@ -656,10 +644,17 @@ td {
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
+.hard-card {
+    width: 15%;
+    height: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px){
 .hard-card {
     width: 14%;
-    height: 133px;
+    height: 132px;
     }
 }
 
