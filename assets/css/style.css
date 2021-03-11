@@ -889,14 +889,15 @@ td {
 
 .noWin-content {
     width: 75%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #f3ff38;
     color: #000;
-    margin: 30% auto;
     padding: 10px;
     border-radius: 5px;
     font-family: "Chicle", "Open-Sans";
-    position: relative;
-    top: 0;
     -webkit-animation: slide 1.2s linear;
     animation: slide 1.2s linear;
 }
@@ -1046,7 +1047,9 @@ td {
     border-radius: 5px;
     font-family: "Chicle", "Open-Sans";
     position: relative;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     -webkit-animation: slide 1.2s linear;
     animation: slide 1.2s linear;
 }
