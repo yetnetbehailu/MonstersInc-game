@@ -38,11 +38,11 @@ var gameModal = document.getElementById("gamemodal");
 
 var gameBtn = document.getElementById("gameBtn");
 
-var shutBtn = document.getElementsByClassName("shutBtn")[0];
+    closeBtn = document.getElementsByClassName("closeBtn")[1];
 
 gameBtn.addEventListener("click", showModal);
 
-shutBtn.addEventListener("click", hideModal);
+closeBtn.addEventListener("click", hideModal);
 
 
 window.addEventListener("click", clickOutside);

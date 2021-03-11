@@ -353,19 +353,6 @@ td {
 }
 
 
-.shutBtn {
-    color: #000;
-    float: right;
-    font-size: 26px;
-    line-height: 1;
-}
-
-.shutBtn:hover,
-.shutBtn:focus {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /*home-footer*/
 .home-footer {
     height: 3rem;
@@ -398,14 +385,14 @@ td {
     justify-content: flex-end;
 }
 
-.home {
+#home {
     font-size: x-large;
     background: #24FF00;
     margin-top: 15px;
     margin-left: 10px;
 }
 
-.restart {
+#restart {
     font-size: x-large;
     background: #24FF00;
     margin-top: 15px;

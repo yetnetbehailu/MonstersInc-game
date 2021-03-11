@@ -162,12 +162,12 @@ $("#iDontBtn").click(function () {
 
 //re-direct home btn
 
-document.getElementsByClassName("home").onclick = function () {
+document.getElementById("home").onclick = function () {
     location.href = "index.html";
 }
 
 //reset board btn
-$(".restart").click(function () {
+$("#restart").click(function () {
     location.reload();
 })
 
