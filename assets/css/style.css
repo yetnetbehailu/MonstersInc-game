@@ -64,9 +64,14 @@
     color: #257ac9;
     cursor: default;
 }
-
+@media only screen and (min-width: 570px) and (max-width: 1023px) {
+    .head-titel {
+        font-size: 3.5rem;
+    }
+}
 .logo {
-    width: 80%;
+    width: 90%;
+    margin-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -76,7 +81,8 @@
 }
 
 .inc {
-    width: 75%;
+    width: 100vw;
+    height: 75vw;
 }
 
 .main-image {
@@ -92,13 +98,14 @@
 @media only screen and (min-width: 1024px) {
     .logo {
         width: 30%;
+        margin-top: 2px;
     }
 }
 
-@media screen and (min-width: 768px),
-(max-height: 700px) {
+@media only screen and (min-width: 1024px) {
     .inc {
-        width: 65%;
+        width: 74%;
+        height: 100%;
     }
 }
 
@@ -109,11 +116,16 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 5%;
     font-family: "Chicle", "Open-Sans";
 }
 
+@media only screen and (min-width: 1024px) {
+    .primary-buttons {
+        margin-top: 2%;
+    }
+}
 .btn-group-lg>.btn,
 .btn-lg {
     font-size: 1.4rem;
@@ -293,6 +305,7 @@ tbody {
 th {
     padding: 4px;
     border: groove #000;
+    text-align: center;
 }
 
 td {
@@ -344,7 +357,7 @@ td {
 .btn-success {
     width: 150px;
     font-size: 18px;
-    color: #171917;
+    color: #000;
     background-color: #29a044;
 }
 
