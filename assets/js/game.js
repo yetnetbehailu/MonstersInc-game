@@ -148,7 +148,7 @@ $("#yesBtn").click(function () {
 
 //exit game nobtn
 $("#noBtn").click(function () {
-    window.location.href = "/index.html"
+    window.location.href = "index.html"
 })
 
 $("#iDoBtn").click(function () {
@@ -157,7 +157,7 @@ $("#iDoBtn").click(function () {
 
 //exit game nobtn
 $("#iDontBtn").click(function () {
-    window.location.href = "/index.html"
+    window.location.href = "index.html"
 })
 
 //re-direct home btn
