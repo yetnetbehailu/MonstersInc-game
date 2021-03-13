@@ -1,9 +1,10 @@
- // index js code...
- // Sound
+// index js code...
+// Sound
 function togglePlay() {
-        let audio = document.getElementById("audio");
-        return audio.paused ? audio.play() : audio.pause();
-};
+    $("#sound i").toggleClass("fa-volume-up fa-volume-mute");
+    let audio = document.getElementById("audio");
+    return audio.paused ? audio.play() : audio.pause();
+}
 
 //How to play -Modal code sourced from Url (https://www.youtube.com/watch?v=6ophW7Ask_0)
 var infoModal = document.getElementById("instructionsmodal");
@@ -16,19 +17,18 @@ infoBtn.addEventListener("click", openModal);
 
 closeBtn.addEventListener("click", closeModal);
 
-
 window.addEventListener("click", outsideClick);
 
-function openModal(){
+function openModal() {
     instructionsmodal.style.display = "block";
 }
 
-function closeModal(){
+function closeModal() {
     instructionsmodal.style.display = "none";
 }
 
 function outsideClick(e) {
-    if (e.target == instructionsmodal){
+    if (e.target == instructionsmodal) {
         instructionsmodal.style.display = "none";
     }
 }
@@ -38,39 +38,36 @@ var gameModal = document.getElementById("gamemodal");
 
 var gameBtn = document.getElementById("gameBtn");
 
-    closeBtn = document.getElementsByClassName("closeBtn")[1];
+closeBtn = document.getElementsByClassName("closeBtn")[1];
 
 gameBtn.addEventListener("click", showModal);
 
 closeBtn.addEventListener("click", hideModal);
 
-
 window.addEventListener("click", clickOutside);
 
-function showModal(){
+function showModal() {
     gamemodal.style.display = "block";
 }
 
-function hideModal(){
+function hideModal() {
     gamemodal.style.display = "none";
 }
 
 function clickOutside(e) {
-    if (e.target == gamemodal){
+    if (e.target == gamemodal) {
         gamemodal.style.display = "none";
     }
 }
 
-
 // Accessing the different levels
 
-$("#easy").click(function() {
+$("#easy").click(function () {
     sessionStorage.setItem("gameLevel", "easy");
 });
-$("#medium").click(function() {
+$("#medium").click(function () {
     sessionStorage.setItem("gameLevel", "medium");
 });
-$("#hard").click(function() {
+$("#hard").click(function () {
     sessionStorage.setItem("gameLevel", "hard");
 });
-
