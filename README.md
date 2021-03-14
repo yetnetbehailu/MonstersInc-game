@@ -1,6 +1,8 @@
 <h1 align="center">Monsters.Inc Memory Game </h1>
 ---
 ![MonstersInc](assets/css/images/livesite.png)
+
+---
  ## User Experience (UX)
  
 -   ### Project Goals ###
@@ -49,7 +51,7 @@ I designed my web application layout using [Figma wireframes](https://www.figma.
  - The buttons inside the "Start Game" button which re-directs to the different game levels, has got less of a round shape and more of a rectangle shape. 
 
   </details>
-  
+
 ---
 
  ## Design ##
