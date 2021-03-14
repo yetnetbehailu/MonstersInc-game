@@ -1,5 +1,6 @@
 <h1 align="center">Monsters.Inc Memory Game </h1>
-
+---
+![MonstersInc](assets/css/images/livesite.png)
  ## User Experience (UX)
  
 -   ### Project Goals ###
@@ -47,8 +48,9 @@ I designed my web application layout using [Figma wireframes](https://www.figma.
 
  - The buttons inside the "Start Game" button which re-directs to the different game levels, has got less of a round shape and more of a rectangle shape. 
 
-
   </details>
+  
+---
 
  ## Design ##
 
@@ -66,7 +68,7 @@ I designed my web application layout using [Figma wireframes](https://www.figma.
 
 - ** Colors: **
 
-- The color scheme will tie into the theme maintaining cohesion and readability.The main colours used are displayed below from [Coolors](https://coolors.co/) ![](assets/css/images/primary-colors.png) 
+- The color scheme will tie into the theme maintaining cohesion and readability.The main colours used are displayed below from [Coolors](https://coolors.co/) ![primary colors](assets/css/images/primary-colors.jpg) 
 
 Both of the primary colors are used for the main elements of the application as I felt they complemented each other well and were fun, bright and vibrant just like the main movie characters keeping with the aesthetic I was aiming for. 
 
@@ -75,7 +77,7 @@ Both of the primary colors are used for the main elements of the application as 
 
    - #257ac9 Dodger Blue shade: Start page background color of sound button, head title, instructions button, instructions modal, start game button, start game modal and footer.This color was chosen not only because of the close resemblance to main monster character Sully, but also because of the color similarity to the MonstersInc logo. 
    
-   Secondary colors used:![](assets/css/images/secondary-colors.png)
+   Secondary colors used:![secondary colors](assets/css/images/secondary-colors.jpg)
 
   - #F3FF38 Gorse yellow shade: 
   Implemented on the game over & win modal. Supposed to simulate light(energy) that is needed to power the monster city.
