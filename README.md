@@ -1,6 +1,8 @@
 <h1 align="center">Monsters.Inc Memory Game </h1>
 ---
-![MonstersInc](assets/css/images/livesite.png)
+
+![Livesite view](assets/css/images/livesite.png)
+[>>To view live site click here<<](https://yetnetbehailu.github.io/MonstersInc-game/)
 
 ---
  ## User Experience (UX)
