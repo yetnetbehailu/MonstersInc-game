@@ -1,5 +1,4 @@
 <h1 align="center">Monsters.Inc Memory Game </h1>
----
 
 ![Livesite view](assets/css/images/livesite.png)
 [>>To view live site click here<<](https://yetnetbehailu.github.io/MonstersInc-game/)
@@ -115,3 +114,61 @@ Whilst on game page the overlays fade in when the game is won or lost to highlig
 - I added animated smiley/sad faces to the game over/win modal as I felt they were a fun addition while also emphasizing the win/lose message.
 
 - Hover effects added on all button elements.
+
+---
+
+## Features
+
+**Existing Features**
+
+- Home page: 
+
+  - MonstersInc logo & head title- Identifies the theme and type of game application.
+
+  - Sound button- which enables/disables the music (MonstersInc theme tune).
+
+  - How to play button - triggers modal with game instructions.
+
+  - Start Game button- Triggers modal containing game level options.
+
+  - Game level buttons- Within start game modal which re-directs & loads game page.
+
+  - Footer - Containing copyright information.
+
+- Game page:
+
+  -  Timer - Displaying the remaining time for the user to complete the game. Triggered when the user clicks the first card. Depending on the game difficulty level the timer is also set up to add time when user finds a matching card pair.
+
+  - Reset button - That will reset the game board anytime the user wishes to restart the game. Button indication FontAwsome Redo icon.
+
+  - Home button - That will re-direct user to home page 
+  at anytime the user wishes to leave or choose another game level to play. Button indication FontAwsome home icon.
+
+  - Attempts board- Depending on level, tracks amount of card pair flips or provides a pair flip limit with reward on pair flip match.
+
+  - Score counter- That adds points when card pairs are found and subtracts points when the cards do not match. Note: Score is not deducted below zero.
+
+  - Animated cards when flipped.
+
+  - Game win modal/overlay - Triggered when the user wins the game by finding all the matching pairs within the allotted time and depending on level nr of flips allowed. Smiley FontAwsome icon animation added to modal to emphasize the win message.
+
+  - Game over modal/overlay -  Triggered when the user loses the game, due to time running out or depending on level nr of attempts exceeds the flip limit. Sad FontAwsome icon animation added to modal to emphasize the loose message.
+
+  - Both game over/win modal contain two buttons- 
+     - "YES" button that will re-load game should user want to play again. 
+
+     - "No" button that will direct user back to home page should user want to leave, re-read instructions or enter another game level.
+
+  - Footer - Containing copyright information
+
+**Features** to **implement** in the **future:**
+
+ - Option to change game theme with alternative card deck objects and background theme.
+
+ - Sound effects added when card pairs found and alternatively when cards do not match.
+
+ - A leaderboard storing the score results for the user to keep track of their achievements.
+
+ - Make it possible for user to choose a different level without having to leave current page and return to home page for better UX.
+
+---
