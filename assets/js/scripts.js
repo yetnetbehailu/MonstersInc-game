@@ -28,7 +28,7 @@ function closeModal() {
 }
 
 function outsideClick(e) {
-    if (e.target == instructionsmodal) {
+    if (e.target === instructionsmodal) {
         instructionsmodal.style.display = "none";
     }
 }
@@ -55,7 +55,7 @@ function hideModal() {
 }
 
 function clickOutside(e) {
-    if (e.target == gamemodal) {
+    if (e.target === gamemodal) {
         gamemodal.style.display = "none";
     }
 }
