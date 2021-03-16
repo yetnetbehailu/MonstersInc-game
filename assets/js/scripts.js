@@ -7,11 +7,11 @@ function togglePlay() {
 }
 
 //How to play -Modal code sourced from Url (https://www.youtube.com/watch?v=6ophW7Ask_0)
-var infoModal = document.getElementById("instructionsmodal");
+let infoModal = document.getElementById("instructionsmodal");
 
-var infoBtn = document.getElementById("infoBtn");
+let infoBtn = document.getElementById("infoBtn");
 
-var closeBtn = document.getElementsByClassName("closeBtn")[0];
+let closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 infoBtn.addEventListener("click", openModal);
 
@@ -34,9 +34,9 @@ function outsideClick(e) {
 }
 
 // startgame button modal Url (https://www.youtube.com/watch?v=6ophW7Ask_0)
-var gameModal = document.getElementById("gamemodal");
+let gameModal = document.getElementById("gamemodal");
 
-var gameBtn = document.getElementById("gameBtn");
+let gameBtn = document.getElementById("gameBtn");
 
 closeBtn = document.getElementsByClassName("closeBtn")[1];
 

@@ -42,7 +42,7 @@ function checkForMatch() {
 }
 
 //match- player recive points & cards hidden
-var scores = document.querySelector(".score")
+const scores = document.querySelector(".score")
 let score = 0;
 
 function hideCards() {
@@ -105,8 +105,8 @@ function resetBoard() {
 
 
 //Timer functionallity
-var second = 59;
-var timer = document.querySelector("#timer");
+let second = 59;
+let timer = document.querySelector("#timer");
 let countDown;
 
 function startTimer() {
