@@ -172,3 +172,100 @@ Whilst on game page the overlays fade in when the game is won or lost to highlig
  - Make it possible for user to choose a different level without having to leave current page and return to home page for better UX.
 
 ---
+
+## Technologies Used
+
+### Languages 
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - Used to create website content and structure.
+
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Used to style HTML5 content. 
+
+- [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)- Used to implement the functionality and logic of the application.
+
+### Frameworks & Tools 
+
+* [Bootstrap](https://getbootstrap.com/) -  Used to assist with the responsiveness and styling of the website.
+
+* [Flexbox]() - Used to wrap and align gameboard layout.
+
+* [JQuery](https://jquery.com)
+    - Used to enable interactive elements of the game.
+    
+* [FontAwesome](https://fontawesome.com/) - Used for icons.
+
+* [Google Fonts](https://fonts.google.com/) - Used for Typography.
+
+* [Figma](https://www.figma.com/) - Used to create wireframes.
+
+* [CSS Autoprefixer](https://autoprefixer.github.io/)
+  - All CSS code was run through Autoprefixer to ensure compatibility across multiple browsers.
+
+* [Am I Responsive](http://ami.responsivedesign.is/#)- Used to test web page layout responsive design
+
+ * [hover.css](https://ianlunn.github.io/Hover/) - For visual effects on buttons.
+
+* [Adobe Photoshop](https://photoshop.adobe.com/)- Photoshop was used to resize images and edit photos for the website.
+
+* [Web formatter](https://webformatter.com/)- Used to beautify Html code.
+
+* [online-spellcheck](https://www.online-spellcheck.com/)- Used to check spelling.
+
+* [Tinypng](https://tinypng.com/)- Used to compress all the images. 
+
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - For testing responsive design and diagnose problems.
+
+* [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)  - to test the performance of the application
+
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Used to detect overflow.
+
+* [RealFaviconGenerator](https://realfavicongenerator.net/)- Used to create the favicon.
+
+### Workspace, version control, and repository storage ###
+
+* [GitHub](https://github.com/) - A cloud based version control service that stores the repository and various changes made.
+
+* [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used for writing code to develop website.
+
+* [Git](https://git-scm.com/) - Version control system to track changes and store file versions.
+
+## Testing
+
+[Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Used tool consistently to identify issues arising and to test changes made throughout site development to ensure web application desired appearance and functionality.
+
+[W3C Markup Validator](https://validator.w3.org/)- Used to validate HTML; No errors found
+
+[W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS; No errors found
+
+[JSLint](https://jslint.com/)- Used to validate Javascript code no major errors depicted below (game.js) ![JS Lint warnings](assets/css/images/jslint-game.png) (scripts.js) ![JS Lint warnings](assets/css/images/jslint-scripts.png)
+Modifications let/var, js code beautified trailing space removed, operator modified to equal type/value.
+
+
+### Issues and Resolutions
+
+**Errors encountered and resolved during development process**
+
+-  In the initial phase of creating the cards, I had made use of the Bootstrap col & row system. I had also tried to implement the Bootstrap grid format. However as I was trying to fit the images inside the cols/grid dimensions, I was unable to make it happen without the images being stretched or to small when altering the screen size. This problem maintained even after re-sizing and having the images adjusted to be equal dimensions. I also tested different width and height dimensions for my card objects and game-card row, still wouldn't work. Until I removed the grid and col classes then I was able to adjust my images according to my card dimensions. Now this seemed like the right solution for me at the time, but moving forward had caused me some unwanted trouble. First obstacle displayed when trying to align the cards according to desired layout. Because I had not used cols or grid formatting the cards where sliding and adjusting freely when re-sizing screen view, to prevent this I used flexbox to align my cards according to desired appearance. Once again worked fine for the time being. Not until having to adjust the card amount & layout according to game level chosen did this become a challenge. Since my cards(flex-items) were only contained by the flex wrapper, I would now have to work around adjusting the cards width and height within the wrapper as well as the wrapper dimension. Which in the end meant an over use/ dependency on media queries. I have definitely learnt from my mistakes and moving forward will make sure to learn & understand how to incorporate images inside grid / col formats.
+
+- Accessing the different game levels from start page. This was a tricky one, until I discovered the use of sessionstorage and the effectiveness of using switch statements. Because I have two separate js files each connected to a separate html file I could not access code between the two files. To do such I figured out that a possible way would be to save the variable using sessionstorage.setItem and retrieve it using sessionstorage.getItem in the alternate file. Then by implementing a switch statement alter between the key values stored in sessionstorage. Combining these two methods I was able to make the game level buttons re-direct to game page with the right level layout. 
+
+- Another challenge was specifying certain conditions to only be executed depending on game level. Because the switch statment I had curated was only meant to be called once when the game page is loaded, functions that I desired to be executed multiple times would have to be written outside the switch statement. Because these conditions were written outside the switch statment I would have to reference the key values each time to specify the targeted level.
+
+- I encountered an issue when trying to have my FontAwsome smiley/sad face icons rotating. I wanted the icons to rotate around its own center, so i had written a rotate animation with linear motion to spin infinitely using keyframe transform 0deg to 359deg in circle motion. This alone would not work, on research i found this notation on [FontAwsome](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) : ![FontAwsome note](assets/css/images/fontawsome.png)
+In my situation neither display block nor inline block would fix the problem, what made it work was rather the inline table value. Which appears to be a block-level context according to [MDN definition inline-table](https://developer.mozilla.org/en-US/docs/Web/CSS/display). 
+
+**Errors encountered and resolved Post-Deployment**
+
+- After deployment testing my web application on AmIresponsive I noticed that my cards were stretching outside screen view on smaller devices, this was due to a mistake on my part setting a fixed width media query on game page larger than screen viewport dimension on smaller devices. Simply resolved by removing the mediaquery with the fixed and setting a more responsive vw & vh unit on the game page class instead. 
+
+
+- After deploying the project a couple of issues were reported: 
+
+    - 1) Where the hero-img was appearing blurry and too small in relation to the start page buttons. Resolved issue by altering img width/unit to vw/vh instead of % that was stretching the img.
+
+    -2) The game over/win modals appearing and then disappearing leaving user unable to click or move anywhere else on the page.![Error-game over/win modal](assets/css/images/error-modal.jpg). Resolved by amending the css of the modals,(red marked code faulty, green corrected). ![Before & After preview of code](assets/css/images/before-after-modal.png) 
+
+
+
+
+
