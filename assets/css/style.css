@@ -232,6 +232,7 @@
     padding: 20px;
     width: 50%;
     border-radius: 5px;
+    cursor: default;
 }
 
 @media screen and (max-width: 530px) {
@@ -343,6 +344,7 @@ td {
     padding: 20px;
     width: 280px;
     border-radius: 5px;
+    cursor: default;
 }
 
 .levelsBtn {
