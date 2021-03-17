@@ -265,7 +265,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
 * [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) - Used to test the performance of the application on desktop & mobile. Following reports were generated:
 
- * Index.html- Desktop - [LINK]()
+ * Index.html- Desktop - [LINK](https://github.com/yetnetbehailu/MonstersInc-game/tree/master/assets/testing-desktop)
  * Performance Report- 98%
 
  * Accessibility Report- 100% Updated accessible name added to button so that screen readers and other assistive technologies provides user with clear description of what the button does.
@@ -274,7 +274,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  * SEO Report - 100% 
 
- * game.html- Desktop - [LINK]()
+ * game.html- Desktop - [LINK](https://github.com/yetnetbehailu/MonstersInc-game/tree/master/assets/testing-desktop)
 
  * Performance Report- 88% Lost points due to render-blocking resources, unused JavaScript error, duplicate modules in JavaScript bundle
 
@@ -284,7 +284,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  * SEO Report - 100% 
 
- Index.html- Mobile - [LINK]()
+ Index.html- Mobile - [LINK](https://github.com/yetnetbehailu/MonstersInc-game/tree/master/assets/testing-mobile)
  * Performance Report- 75% Lost points due to render-blocking resources & unused CSS(?)
 
  * Accessibility Report- 100% 
@@ -293,7 +293,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  * SEO Report - 100% 
 
- * game.html- Mobile - [LINK]()
+ * game.html- Mobile - [LINK](https://github.com/yetnetbehailu/MonstersInc-game/tree/master/assets/testing-mobile)
 
  * Performance Report- 80% Issues serve images in next-gen formats Eliminate render-blocking resources Properly size images, remove unused CSS(?)
 
@@ -391,3 +391,40 @@ In my situation neither display block nor inline block would fix the problem, wh
  - _"As a **user**, I want to be able to read my score result_".
        - Scoreboard visible at game page throughout play.
 
+---
+## Deployment ##
+
+To share the live website with others, I deployed my project on GitHub Pages using following steps:
+
+1. Logged-in to my GitHub account.
+
+2. Selects my repositories.
+
+3. Click on my Ivolunteer repository 
+
+4. On the top right navigation clicked on settings. 
+
+5. Under the settings section of the GitHub repository, scroll down to the GitHub Pages section.
+
+6. Selects Master Branch from the Source dropdown menu.
+
+7. Once selected, this publishes the project to GitHub Pages and displays the site URL.
+
+** The code can be run locally through clone or download.**
+
+1. You can do this by opening the repository, clicking on the 'Code' button, and selecting either 'clone or download'.
+
+2. Once you've copieed the clone URL for the repository in your local IDE open Git Bash
+
+3. Change the current working directory to the location where you want the cloned directory to be made
+
+4. Type git clone and then paste the URL you copied in Step 2.
+5. Press Enter. Your local clone will be created
+
+6. To remove the origin link from your IDE, type git remote rm origin
+
+7. Alternatively you can download the ZIP folder of this project by clicking the Code button and selecting Download ZIP.
+
+8. It can then be unpacked into your desired location
+
+9.Open the index.html file to run the project locally.
