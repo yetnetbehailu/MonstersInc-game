@@ -231,7 +231,7 @@ Whilst on game page the overlays fade in when the game is won or lost to highlig
 
 ## Testing
 
-Testing documentation can be found on a separate document [HERE]()
+Testing documentation can be found on a separate document [HERE](https://github.com/yetnetbehailu/MonstersInc-game/blob/master/assets/docs/testing.md)
 
 ---
 ## Deployment ##

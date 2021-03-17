@@ -4,9 +4,9 @@
 
 [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS; No errors found
 
-[JSL int](https://jslint.com/)- Used to validate Javascript code no major errors depicted below (game.js) ![JS Lint warnings](assets/css/images/jslint-game.png) (scripts.js) 
+[JSL int](https://jslint.com/)- Used to validate Javascript code no major errors depicted below (game.js) ![JS Lint warnings](docs/css/images/jslint-game.png) (scripts.js) 
 
-![JS Lint warnings](assets/css/images/jslint-scripts.png)
+![JS Lint warnings](../css/images/jslint-scripts.png)
 
 - Modifications let/var, js code beautified trailing space removed, operator modified to equal type/value.
 
@@ -74,7 +74,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  - 1) Where the hero-img was appearing blurry and too small in relation to the start page buttons. Resolved issue by altering img width/unit to vw/vh instead of % that was stretching the img.
 
- -2) The game over/win modals appearing and then disappearing leaving user unable to click or move anywhere else on the page.![Error-game over/win modal](assets/css/images/error-modal.jpg). Resolved by amending the css of the modals, (red marked code faulty, green corrected). ![Before & After preview of code](assets/css/images/before-after-modal.png) 
+ -2) The game over/win modals appearing and then disappearing leaving user unable to click or move anywhere else on the page.![Error-game over/win modal](assets/css/images/error-modal.jpg). Resolved by amending the css of the modals, (red marked code faulty, green corrected). ![Before & After preview of code](..docs/css/images/before-after-modal.png) 
  
  ### Manual testing ###
  
