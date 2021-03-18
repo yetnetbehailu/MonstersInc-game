@@ -39,7 +39,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  * Accessibility Report- 100% Updated accessible name added to button so that screen readers and other assistive technologies provides user with clear description of what the button does.
 
- * Best Practices- 79% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers. (Aware of this intentional) Display of images with incorrect aspect ratio and images with low resolution.
+ * Best Practices- 79% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers. Display of images with incorrect aspect ratio and images with low resolution.
 
  * SEO Report - 100% 
 
@@ -58,17 +58,17 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  * Accessibility Report- 100% 
 
- * Best Practices- 79% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers.(Aware of this intentional) display of images with incorrect aspect ratio and images with low resolution.
+ * Best Practices- 79% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers. Display of images with incorrect aspect ratio and images with low resolution.(Remark: Receive info in regards to img Displayed size ,Actual size, Expected size on lighthouse, however when adapting img to either displayed or expected size it seem to resolve the warning but it shows the img in a worse resolution very blurry)Therefor decided to not make a change(?)
 
  * SEO Report - 100% 
 
  * game.html- Mobile - [LINK](https://github.com/yetnetbehailu/MonstersInc-game/tree/master/assets/testing-mobile)
 
- * Performance Report- 80% Issues serve images in next-gen formats Eliminate render-blocking resources Properly size images, remove unused CSS(?)
+ * Performance Report- 80% Issues serve images in next-gen formats Eliminate render-blocking resources, properly size images, remove unused CSS(?)
 
  * Accessibility Report- 100% 
 
- * Best Practices- 93% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers.(?)
+ * Best Practices- 93% Lost points due to libraries with known security vulnerabilities detected, that could be exploited by attackers.(Remark: Receive info in regards to img Displayed size ,Actual size, Expected size on lighthouse, however when adapting img to either displayed or expected size it seem to resolve the warning but it shows the img in a worse resolution very blurry)Therefor decided to not make a change(?)
 
  * SEO Report - 100% 
 
