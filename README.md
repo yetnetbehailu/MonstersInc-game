@@ -270,3 +270,36 @@ To share the live website with others, I deployed my project on GitHub Pages usi
 8. It can then be unpacked into your desired location
 
 9.Open the index.html file to run the project locally.
+
+---
+
+## Credits
+
+### Code 
+ Some of the code for this website was taken from the following sources:
+
+ - Modals slightly altered
+   - https://www.youtube.com/watch?v=6ophW7Ask_0
+
+- Card flip effect 
+   - https://3dtransforms.desandro.com/card-flip
+
+- Store Cards, Match Cards, Refactoring, Lock Board, Card Double Click & Shuffling
+   - https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1733s   
+
+
+### Content
+
+All text written by me! Except from first paragraph on the instructions modal which was sourced from [Wikipideia](https://en.wikipedia.org/wiki/Monsters,_Inc.).
+Big Thanks to @Sean O'Sullivan fellow student for the grammar check!
+
+### Media
+
+- Website images content sourced from - [Google](https://www.google.com/webhp?hl=sv&sa=X&ved=0ahUKEwjpmJqYzrjvAhXGtYsKHeRtDroQPAgI) & [Pinterest](https://www.pinterest.se/)
+
+- Sound clip sourced from 
+   - https://downloads.khinsider.com/game-soundtracks/album/monsters-inc
+
+### Acknowledgements
+
+I would like to thank my mentor Adegbenga Adeye for all the advice given. I would also like to say a massive thank you to @Sean O'Sullivan, @Taylor Brookes & @Simon fellow students for taking the time out to test my game application and give great intuitive feedback. 

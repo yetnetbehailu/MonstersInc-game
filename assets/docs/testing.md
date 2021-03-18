@@ -4,7 +4,7 @@
 
 [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS; No errors found
 
-[JSL int](https://jslint.com/)- Used to validate Javascript code no major errors depicted below (game.js) ![JS Lint warnings](docs/css/images/jslint-game.png) (scripts.js) 
+[JSL int](https://jslint.com/)- Used to validate Javascript code no major errors depicted below (game.js) ![JS Lint warnings](../css/images/jslint-game.png) (scripts.js) 
 
 ![JS Lint warnings](../css/images/jslint-scripts.png)
 
@@ -21,7 +21,7 @@
 
 - Another challenge was specifying certain conditions to only be executed depending on game level. Because the switch statement I had curated was only meant to be called once when the game page is loaded, functions that I desired to be executed multiple times would have to be written outside the switch statement. Because these conditions were written outside the switch statement I would have to reference the key values each time to specify the targeted level.
 
-- I encountered an issue when trying to have my FontAwsome smiley/sad face icons rotating. I wanted the icons to rotate around its own center, so i had written a rotate animation with linear motion to spin infinitely using key frame transform 0deg to 359deg in circle motion. This alone would not work, on research i found this notation on [FontAwsome](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) : ![FontAwsome note](assets/css/images/fontawsome.png)
+- I encountered an issue when trying to have my FontAwsome smiley/sad face icons rotating. I wanted the icons to rotate around its own center, so i had written a rotate animation with linear motion to spin infinitely using key frame transform 0deg to 359deg in circle motion. This alone would not work, on research i found this notation on [FontAwsome](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) : ![FontAwsome note](../css/images/fontawsome.png)
 In my situation neither display block nor inline block would fix the problem, what made it work was rather the inline table value. Which appears to be a block-level context according to [MDN definition inline-table](https://developer.mozilla.org/en-US/docs/Web/CSS/display). 
 
 **Errors encountered and resolved Post-Deployment**
@@ -74,7 +74,7 @@ In my situation neither display block nor inline block would fix the problem, wh
 
  - 1) Where the hero-img was appearing blurry and too small in relation to the start page buttons. Resolved issue by altering img width/unit to vw/vh instead of % that was stretching the img.
 
- -2) The game over/win modals appearing and then disappearing leaving user unable to click or move anywhere else on the page.![Error-game over/win modal](assets/css/images/error-modal.jpg). Resolved by amending the css of the modals, (red marked code faulty, green corrected). ![Before & After preview of code](..docs/css/images/before-after-modal.png) 
+ -2) The game over/win modals appearing and then disappearing leaving user unable to click or move anywhere else on the page.![Error-game over/win modal](../css/images/error-modal.jpg). Resolved by amending the css of the modals, (red marked code faulty, green corrected). ![Before & After preview of code](../css/images/before-after-modal.png) 
  
  ### Manual testing ###
  
@@ -108,9 +108,9 @@ In my situation neither display block nor inline block would fix the problem, wh
  - Disclaimer: Each game level was played to verify that the correct points and penalties were being given and that time was being accurately displayed. Mistakes were made on purpose to ensure that the score and attempts counters were displaying correctly.
 
  - Game Board displays accurately on load
- - 12 card easy board display ![Easy board](assets/css/images/easy-board.jpg)
- - 18 card medium board display ![Medium board](assets/css/images/medium-board.jpg)
- - 24 card hard board display ![Hard board](assets/css/images/hard-board.jpg)
+ - 12 card easy board display ![Easy board](../css/images/easy-board.jpg)
+ - 18 card medium board display ![Medium board](../css/images/medium-board.jpg)
+ - 24 card hard board display ![Hard board](../css/images/hard-board.jpg)
 
  - Cards animation triggered on card click which flips card over. While check for match function is running cards cannot be clicked as game board is disable - tried clicking on other cards while active cards are face up. Matched pairs disappear from game board as their visibility is hidden on match, enabling user to click on them again. Flipped cards that are not a match are returned to starting position. As soon as cards start to flip back into position other cards can be flipped. Pairs found within allotted time and depending on game level according to draw limit triggers Win modal/overlay. Timer stops when game is won. Cards stay face up long enough for user to see images. Clicks outside of game board does not affect attempts board count or scoreboard count. Repeated clicks on same card faced up does not affect attempts board count or scoreboard count.
 
